@@ -1,0 +1,95 @@
+
+.container{
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 5fr 1fr;
+}
+
+.hidden {
+  display: none;
+}
+.backgroundImage {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom:0px;
+  z-index: -1;
+  opacity:80%;
+}
+#time{
+  margin: 0;
+  cursor: default;
+  color: white;
+  font-size: 650%;
+  letter-spacing: -5%;
+  text-shadow: 2px 3px 4px rgb(134, 134, 134);
+  text-align: center;
+}
+#greeting{
+  margin: 0;
+  cursor: default;
+  color: white;
+  font-size: 350%;
+  letter-spacing: -5%;
+  text-shadow: 2px 3px 4px rgb(134, 134, 134);
+  text-align: center;
+}
+
+
+input[type=text]{
+  margin-top: 20px;
+  position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+  font-size: 150%;
+  outline: none;
+  width: 30%;
+  letter-spacing: -5%;
+  text-shadow: 1px 2px 3px rgb(134, 134, 134);
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid white;
+  color: rgb(255, 255, 255);
+  background: none;
+}
+input::placeholder{
+  color: rgb(255, 255, 255);
+}
+#test {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}

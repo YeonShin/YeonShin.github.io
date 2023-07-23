@@ -1,0 +1,22 @@
+#weather{
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: end;
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  cursor: default;
+}
+#weather button{
+  margin-left: 15px;
+  float: left;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+}
+#weather button:hover{
+  background-color: gray;
+  border-radius: 5px 5px 5px 5px;
+}

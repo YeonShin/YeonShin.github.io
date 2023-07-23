@@ -1,0 +1,39 @@
+ul{
+  margin-left: 30%;
+  margin-right: 30%;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+ul::-webkit-scrollbar{
+  display: none;
+}
+li{
+  color: white;
+  font-size: 130%;
+  cursor: default;
+  list-style-type: none;
+}
+.fadeIn{
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+.fadeOut{
+    /* animation : 효과(@keyframes 이름) 동작시간 */
+      animation: fadein 3s;
+}
+@keyframes fadeout {
+  /* 효과를 동작시간 동안 0 ~ 1까지 */
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+.todo-btn{
+  background: none;
+  border: none;
+  font-size: 100%;
+}

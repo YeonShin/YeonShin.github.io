@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>New Tap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/weather.css">
+    <link rel="stylesheet" href="src/css/quotes.css">
+    <link rel="stylesheet" href="src/css/todo.css">
+  </head>
+  <body id="test">
+
+    <div class="container">
+      <header>
+        <div id="weather">
+          <form id="logout-form">
+            <button class="hidden" id="logoutBtn">Logout</button>
+          </form>
+          <span id="weather2"></span>
+          <span id="city"></span>
+        </div>
+      </header>
+
+      <div class="clock">
+      <h1 id="time"></h2>
+      </div>
+      <div class="greeting">
+        <h1 id="greeting"></h1>
+        <form class="hidden" id="login-form">
+          <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='What is your name?'"
+        />
+        </form>
+      </div>
+      <div id="todo">
+        <form id="todo-form">
+          <input type="text" placeholder="Write a To Do and Press Enter" onfocus="this.placeholder=''"
+          onblur="this.placeholder='Write a To Do and Press Enter'" required />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div></div>
+      <footer>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/background.js"></script>
+    <script src="src/js/greetings.js"></script>
+    <script src="src/js/quotes.js"></script>
+    <script src="src/js/todo.js"></script>
+    <script src="src/js/weather.js"></script>
+  </body>
+</html>
